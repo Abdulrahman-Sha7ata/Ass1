@@ -29,3 +29,7 @@ class Response(models.Model):
     poll = models.ForeignKey(Poll, on_delete=models.CASCADE, related_name='Response', default=None)
     def __str__(self):
         return self.name
+
+
+
+        
