@@ -31,4 +31,4 @@ class Response(models.Model):
     created_at = models.DateTimeField(default=timezone.now, editable=True)
     
     def __str__(self):
-        return f"Response by {self.name} for Option {self.option.title} at {self.created_at}"
+        return f"Response  {self.name}  Option {self.option.title} at {self.created_at}"
