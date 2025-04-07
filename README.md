@@ -6,6 +6,7 @@ How work was distributed: I assigned each team member a specific task so that ev
 How the team collaborated: Using whatsapp. Also, The project butoon Uploading image.png…
 
 Bonus Tasks:
+
 1- Added Forms in admin.py 
 
 2- I used a  custom method that validation for the form field "title":
