@@ -13,8 +13,9 @@ class Poll(models.Model):
     question = models.CharField(max_length=200)
     active_until = models.DateTimeField(auto_now_add=True)
     status = models.IntegerField(choices=STATUS, default=0)
+    search_fields = ('title', 'question')
     def __str__(self):
-        return f"{self.title} - {self.question} (Active until: {self.active_until}, Status: {self.status})"
+        return f"{self.title} - {self.question} - {self.search_fields}  (Active until: {self.active_until}, Status: {self.status})"
     
 
 class Option(models.Model):  

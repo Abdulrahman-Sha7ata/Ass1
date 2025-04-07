@@ -22,6 +22,7 @@ class PollAdmin(admin.ModelAdmin):
     list_filter = ('status',)
     inlines = [PollOptionInline]
     form = PollAdminForm
+    search_fields = ('title', 'question')
 
     def responses_count(self, obj):
         return obj.responses.count()
